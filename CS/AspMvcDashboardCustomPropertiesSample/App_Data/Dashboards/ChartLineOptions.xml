@@ -38,14 +38,12 @@
             <Simple Name="Extended Price (2015)" SeriesType="Line">
               <Value DefaultId="DataItem0" />
               <CustomProperties>
-                <LineTypeProperty>dashdot</LineTypeProperty>
                 <DashStyleProperty>dashdot</DashStyleProperty>
               </CustomProperties>
             </Simple>
             <Simple Name="Extended Price (2014)" SeriesType="Line">
               <Value DefaultId="DataItem3" />
               <CustomProperties>
-                <LineTypeProperty>longDash</LineTypeProperty>
                 <DashStyleProperty>longDash</DashStyleProperty>
               </CustomProperties>
             </Simple>
