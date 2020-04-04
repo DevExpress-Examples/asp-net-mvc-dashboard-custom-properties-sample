@@ -26,7 +26,7 @@ The extension is a JavaScript module that you can integrate into your applicatio
 
 The following example contains a set of custom properties that demonstrate different capabilities. Below you find a detailed description for every extension.
 
-> You can download the extension files from the following folder: [Extensions](CS/AspMvcDashboardCustomPropertiesSample/Content/extensions)
+> You can download the extension files from the following folder: [Extensions](/CS/AspMvcDashboardCustomPropertiesSample/Content/Extensions)
 
 ### ChartScaleBreaksExtension
 
