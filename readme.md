@@ -1,4 +1,4 @@
-﻿# Web Dashboard - Custom Properties
+﻿# ASP.NET MVC Dashboard - Custom Properties
 
 The following example shows how to create custom properties for the Web Dashboard.
 
