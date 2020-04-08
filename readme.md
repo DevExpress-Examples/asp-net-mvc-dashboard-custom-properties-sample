@@ -1,4 +1,7 @@
-﻿# ASP.NET MVC Dashboard - Custom Properties
+# ASP.NET MVC Dashboard - Custom Properties
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/253062639/)**
+<!-- run online end -->
 
 The following example shows how to create custom properties for the Web Dashboard.
 
