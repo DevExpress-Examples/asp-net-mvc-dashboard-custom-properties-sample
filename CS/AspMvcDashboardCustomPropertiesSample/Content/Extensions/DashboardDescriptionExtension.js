@@ -95,7 +95,7 @@
         return menuItem;
     }
 
-// 4. Event Subscription
+    // 4. Event Subscription
     function DashboardDescriptionExtension(dashboardControl) {
         var menuItem = createMenuItem(dashboardControl)
         this.name = "DashboardDescription",
