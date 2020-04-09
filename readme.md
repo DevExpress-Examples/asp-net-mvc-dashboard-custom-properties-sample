@@ -13,7 +13,7 @@ To apply custom property values to a dashboard, you need to create an extension.
 
 1. Model.
 
-    The model is an object that contains the extension name, type, and a default value. It also specifies on which level the extension is created (dashboard, dashboard item or data item container). Use the [Model.registerCustomProperty](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.Model.registerCustomProperty-1?v=20.1) property to register the custom property definition.
+    The model is an object that contains the property name, type, and a default value. It also specifies on which level the property is created (dashboard, dashboard item or data item container). Use the [Model.registerCustomProperty](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.Model.registerCustomProperty-1?v=20.1) property to register the custom property definition.
 
 2. Viewer
 
