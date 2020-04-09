@@ -44,7 +44,8 @@
             });
         }
     };
-
+	
+    // 3. Designer
     function isDescriptionDisabled(dashboardItem) {
         return !dashboardItem.customProperties.getValue(enabledProperty.propertyName);
     }
@@ -57,7 +58,6 @@
         }
     }
 
-    // 3. Designer
     function onCustomizeSections(args) {
         args.addSection({
             title: "Description (Custom)",
