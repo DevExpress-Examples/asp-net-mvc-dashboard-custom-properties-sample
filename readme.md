@@ -37,6 +37,8 @@ The following example contains a set of custom properties that demonstrate diffe
 
 This extension enables or disables scale breaks for the Chart dashboard item.
 
+![](images/ChartScaleBreaksExtension.png)
+
 **Overview**:
 - Adds a boolean custom property for a specific dashboard item (Chart).
 - Integrates a _Scale breaks (Custom)_ section in the _Options_ menu with the [CheckBox](https://js.devexpress.com/DevExtreme/ApiReference/UI_Widgets/dxCheckBox/) widget as an editor.
@@ -45,6 +47,8 @@ This extension enables or disables scale breaks for the Chart dashboard item.
 
 This extension changes the dash style of the each series line in the Chart dashboard item.
 
+![](images/ChartLineOptionsExtension.png)
+
 **Overview**:
 - Adds a string custom property for a specific data item container (Chart's series).
 - Integrates a _Line Options (Custom)_ section in the data item menu with the [SelectBox](https://js.devexpress.com/DevExtreme/ApiReference/UI_Widgets/dxSelectBox/) widget as an editor.
@@ -52,6 +56,8 @@ This extension changes the dash style of the each series line in the Chart dashb
 ### DashboardDescriptionExtension
 
 This extension enables you to set a dashboard description in the dashboard menu. The dashboard description is displayed when you hover the info button in the dashboard title.
+
+![](images/DashboardDescriptionExtension.png)
 
 **Overview**:
 - Adds a string custom property for a dashboard.
@@ -62,6 +68,7 @@ This extension enables you to set a dashboard description in the dashboard menu.
 
 This extension enables you to set a description for each dashboard item. The dashboard item description is displayed when you hover the info button in the item's caption.
 
+![](images/ItemDescriptionExtension.png)
 
 Overview:
 - Adds a string custom property for each dashboard item.
@@ -72,6 +79,8 @@ Overview:
 
 This extension enables you to change the Chart's Y-axis maximum value.
 
+![](images/ChartAxisMaxValueExtension.png)
+
 Overview:
 - Adds a set of custom properties with [different types](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.Model.CustomPropertyMetadata?v=20.1#js_devexpress_dashboard_model_custompropertymetadata_valuetype) (number, boolean, and string) for a specific dashboard item (Chart).
 - Demonstrates how to bind a custom property to a list of data items.
@@ -80,6 +89,8 @@ Overview:
 ### ChartConstantLinesExtension
 
 This extension draws constant lines for the Chart dashboard item.
+
+![](images/ChartConstantLinesExtension.png)
 
 Overview:
 - Adds a complex custom property for a specific dashboard item (Chart).
