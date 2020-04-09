@@ -7,19 +7,21 @@ The following example shows how to create custom properties for the Web Dashboar
 
 ## Overview
 
-The extension is a JavaScript module that you can integrate into your application. Every extension that provides custom property can be divided to the following parts:
+Custom properties are stored in the **CustomProperties** collection in a structured format. Each custom property of this collection contains the custom property's metadata.
+
+To apply custom property values to a dashboard, you need to create an extension. The extension is a JavaScript module that you can integrate into your application. Every extension that provides custom property can be divided to the following parts:
 
 1. Model.
 
-    The model is an object that contains the extension name, type and a default value. It also specifies on which level the extension is created (a dashboard, dashboard item or data item container). Use the [Model.registerCustomProperty](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.Model.registerCustomProperty-1?v=20.1) property to register the custom property definition.
+    The model is an object that contains the extension name, type, and a default value. It also specifies on which level the extension is created (dashboard, dashboard item or data item container). Use the [Model.registerCustomProperty](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.Model.registerCustomProperty-1?v=20.1) property to register the custom property definition.
 
 2. Viewer
 
-    In this part you modify the viewer part according to the saved custom property value. It contains different methods that change the displayed elements.
+    In this part you modify the viewer part according to the saved custom property value. You can use the client methods and events to change the displayed elements.
 
 3. Designer
 
-    This part contains settings for the designer. It is different options and editors that used to configure the extension and change the custom property value. It is not required if you use the extension in the Viewer mode.
+    This part contains designer settings. Add editors and control elements to configure and change the custom property's values in the UI. This part is not required if you use the extension in Viewer mode.
 
 4. Event Subscription
 
@@ -33,7 +35,7 @@ The following example contains a set of custom properties that demonstrate diffe
 
 ### ChartScaleBreaksExtension
 
-It is a simple extension that enables or disables scale breaks for the Chart dashboard item.
+This extension enables or disables scale breaks for the Chart dashboard item.
 
 **Overview**:
 - Adds a boolean custom property for a specific dashboard item (Chart).
@@ -41,7 +43,7 @@ It is a simple extension that enables or disables scale breaks for the Chart das
 
 ### ChartLineOptionsExtension
 
-It is a simple extension that changes the dash style of the each series line in the Chart dashboard item.
+This extension changes the dash style of the each series line in the Chart dashboard item.
 
 **Overview**:
 - Adds a string custom property for a specific data item container (Chart's series).
@@ -49,7 +51,7 @@ It is a simple extension that changes the dash style of the each series line in 
 
 ### DashboardDescriptionExtension
 
-It is an extension that enables you to set a dashboard description. The dashboard description is displayed when you hover the info button in the dashboard title.
+This extension enables you to set a dashboard description. The dashboard description is displayed when you hover the info button in the dashboard title.
 
 **Overview**:
 - Adds a string custom property for a dashboard.
@@ -58,7 +60,7 @@ It is an extension that enables you to set a dashboard description. The dashboar
 
 ### ItemDescriptionExtension
 
-It is an extension that enables you to set a description for each dashboard item. The dashboard item description is displayed when you hover the info button in the item's caption.
+This extension enables you to set a description for each dashboard item. The dashboard item description is displayed when you hover the info button in the item's caption.
 
 
 Overview:
@@ -68,7 +70,7 @@ Overview:
 
 ### ChartAxisMaxValueExtension
 
-It is an extension that enables you to change the Chart's Y-axis maximum value.
+This extension enables you to change the Chart's Y-axis maximum value.
 
 Overview:
 - Adds a set of custom properties with [different types](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.Model.CustomPropertyMetadata?v=20.1#js_devexpress_dashboard_model_custompropertymetadata_valuetype) (number, boolean, and string) for a specific dashboard item (Chart).
@@ -77,10 +79,15 @@ Overview:
 
 ### ChartConstantLinesExtension
 
-It is an extension that draws constant lines for the Chart dashboard item.
+This extension draws constant lines for the Chart dashboard item.
 
 Overview:
 - Adds a complex custom property for a specific dashboard item (Chart).
 - Shows how to work with complex custom values that are saved as an array.
 - Demonstrates how to bind a custom property to a list of data items.
 - Customizes export to display the result in the exported document.
+
+## See Also
+
+- [Client-Side Customization](https://docs.devexpress.com/Dashboard/401701/designer-and-viewer-applications/web-dashboard/client-side-customization?v=20.1)
+- [Custom properties](https://docs.devexpress.com/Dashboard/401702/designer-and-viewer-applications/web-dashboard/client-side-customization/custom-properties?v=20.1)
