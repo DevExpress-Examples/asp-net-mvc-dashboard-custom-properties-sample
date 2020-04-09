@@ -51,7 +51,7 @@ This extension changes the dash style of the each series line in the Chart dashb
 
 ### DashboardDescriptionExtension
 
-This extension enables you to set a dashboard description. The dashboard description is displayed when you hover the info button in the dashboard title.
+This extension enables you to set a dashboard description in the dashboard menu. The dashboard description is displayed when you hover the info button in the dashboard title.
 
 **Overview**:
 - Adds a string custom property for a dashboard.
