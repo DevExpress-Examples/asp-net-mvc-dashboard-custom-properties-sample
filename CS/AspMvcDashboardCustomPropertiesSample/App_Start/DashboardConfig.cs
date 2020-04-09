@@ -15,13 +15,11 @@ namespace AspMvcDashboardCustomPropertiesSample {
         public static string  DashboardFolder {get { return HostingEnvironment.MapPath("~/App_Data/Dashboards");  } }
         public static void RegisterService(RouteCollection routes) {
             routes.MapDashboardRoute("dashboardControl");
+            
+            // DashboardFileStorage dashboardFileStorage = new DashboardFileStorage(DashboardFolder);
+            // DashboardConfigurator.Default.SetDashboardStorage(dashboardFileStorage);
 
-           
-            DashboardFileStorage dashboardFileStorage = new DashboardFileStorage(DashboardFolder);
-            DashboardConfigurator.Default.SetDashboardStorage(dashboardFileStorage);
-
-            //DashboardConfigurator.Default.SetDashboardStorage(SessionDashboardStorage.Instance); 
-
+            DashboardConfigurator.Default.SetDashboardStorage(SessionDashboardStorage.Instance); 
 
             DashboardConfigurator.Default.CustomExport += (s, e) => {
                 ChartConstantLinesExtension.CustomExport(e);
