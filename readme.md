@@ -35,8 +35,6 @@ To apply custom property values to a dashboard, you need to create an extension.
 
 The following example contains a set of custom properties that demonstrate different capabilities. Below you find a detailed description for every extension.
 
-> You can download the extension files from the following folder: [Extensions](/CS/AspMvcDashboardCustomPropertiesSample/Content/Extensions)
-
 ### ChartScaleBreaksExtension
 
 This extension enables or disables scale breaks for the Chart dashboard item.
