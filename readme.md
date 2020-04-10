@@ -1,3 +1,8 @@
+*Files to look at*:
+- [Extensions](./CS/AspMvcDashboardCustomPropertiesSample/Content/Extensions)
+- [Index.cshtml](./CS/AspMvcDashboardCustomPropertiesSample/Views/Home/Index.cshtml)
+- []()
+
 # ASP.NET MVC Dashboard - Custom Properties
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/253062639/)**
