@@ -43,7 +43,7 @@ This extension enables or disables scale breaks for the Chart dashboard item.
 
 **Overview**:
 - Adds a custom Boolean property for a specific dashboard item (Chart).
-- Integrates a _Scale breaks (Custom)_ section in the _Options_ menu with the [CheckBox](https://js.devexpress.com/DevExtreme/ApiReference/UI_Widgets/dxCheckBox/) widget as an editor.
+- Integrates a _Scale breaks (Custom)_ section into the _Options_ menu with the [CheckBox](https://js.devexpress.com/DevExtreme/ApiReference/UI_Widgets/dxCheckBox/) widget as an editor.
 
 ### ChartLineOptionsExtension
 
@@ -53,7 +53,7 @@ This extension changes the dash style of each series line in the Chart dashboard
 
 **Overview**:
 - Adds a string custom property for a specific data item container (Chart's series).
-- Integrates a _Line Options (Custom)_ section in the data item menu with the [SelectBox](https://js.devexpress.com/DevExtreme/ApiReference/UI_Widgets/dxSelectBox/) widget as an editor.
+- Integrates a _Line Options (Custom)_ section into the data item menu with the [SelectBox](https://js.devexpress.com/DevExtreme/ApiReference/UI_Widgets/dxSelectBox/) widget as an editor.
 
 ### DashboardDescriptionExtension
 
@@ -74,7 +74,7 @@ This extension enables you to set a description for each dashboard item. The das
 
 Overview:
 - Adds a custom string property for each dashboard item.
-- Integrates a _Description (Custom)_ section in the _Options_ menu with the predefined [buttonGroup](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.Designer.FormItemTemplates?v=20.1#js_devexpress_dashboard_designer_formitemtemplates_buttongroup_static) template.
+- Integrates a _Description (Custom)_ section into the _Options_ menu with the predefined [buttonGroup](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.Designer.FormItemTemplates?v=20.1#js_devexpress_dashboard_designer_formitemtemplates_buttongroup_static) template.
 - Shows how to enable or disable editors depending on a custom property's value. 
 
 ### ChartAxisMaxValueExtension
