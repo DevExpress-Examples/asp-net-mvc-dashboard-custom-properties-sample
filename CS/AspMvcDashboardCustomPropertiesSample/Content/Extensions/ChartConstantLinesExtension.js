@@ -20,31 +20,29 @@
     // 2. Viewer
     function onItemWidgetOptionsPrepared(args)  {
         if(args.dashboardItem instanceof Model.ChartItem) {
-            if(args.dashboardItem instanceof Model.ChartItem) {
-                var serializedConstantLines = args.dashboardItem.customProperties.getValue(chartConstantLinesProperty.propertyName);
-                var constantLines = JSON.parse(serializedConstantLines);
-                
-                var valueAxisOptions = args.options["valueAxis"] || [];              
-                constantLines.forEach(function(line) {
-                    var axisOptions = valueAxisOptions[0];
-                    if(axisOptions) {
-                        var value = line.value
-                        if(line.isBound) {
-                            value = args.itemData.getMeasureValue(line.measureId).getValue()
-                        }
-                        axisOptions.constantLines = axisOptions.constantLines || [];
-                        axisOptions.constantLines.push({
-                            value: value, 
-                            color: line.color, 
-                            dashStyle: 'longDash', 
-                            width: 2, 
-                            label: { 
-                                text: line.labelText
-                            }
-                        });
+            var serializedConstantLines = args.dashboardItem.customProperties.getValue(chartConstantLinesProperty.propertyName);
+            var constantLines = JSON.parse(serializedConstantLines);
+            
+            var valueAxisOptions = args.options["valueAxis"] || [];              
+            constantLines.forEach(function(line) {
+                var axisOptions = valueAxisOptions[0];
+                if(axisOptions) {
+                    var value = line.value
+                    if(line.isBound) {
+                        value = args.itemData.getMeasureValue(line.measureId).getValue()
                     }
-                });
-            }
+                    axisOptions.constantLines = axisOptions.constantLines || [];
+                    axisOptions.constantLines.push({
+                        value: value, 
+                        color: line.color, 
+                        dashStyle: 'longDash', 
+                        width: 2, 
+                        label: { 
+                            text: line.labelText
+                        }
+                    });
+                }
+            });
         }
     }
 
