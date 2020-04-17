@@ -79,66 +79,68 @@
     }
 
     function onCustomizeSections(args) {
-        args.addSection({
-            title: "Primary Axis Max Value (Custom)",
-            onFieldDataChanged: (e) => {
-                updateFormState(e.component, args.dashboardItem);
-            },
-            onInitialized: (e) => {
-                updateFormState(e.component, args.dashboardItem);
-            },
-            items: [
-                {
-                    dataField: axisMaxValueEnabledProperty.propertyName,
-                    editorType: "dxCheckBox",
-                    label: { visible: false },
-                    editorOptions: {
-                        text: "Enabled",
-                    }
+        if (args.dashboardItem instanceof Model.ChartItem) {
+            args.addSection({
+                title: "Primary Axis Max Value (Custom)",
+                onFieldDataChanged: (e) => {
+                    updateFormState(e.component, args.dashboardItem);
                 },
-                {
-                    dataField: axisMaxValueIsBoundProperty.propertyName,
-                    label: {
-                        text: "Mode"
-                    },
-                    template: Designer.FormItemTemplates.buttonGroup,
-                    editorOptions: {
-                        keyExpr: "value",
-                        items: [{
-                            value: true,
-                            text: "Bound"
-                        }, {
-                            value: false,
-                            text: "Value"
-                        }]
-                    }
-                }, 
-                {
-                    dataField: axisMaxValueConstantProperty.propertyName,
-                    editorType: "dxTextBox",
-                    label: {
-                        text: "Value",
-                    }
+                onInitialized: (e) => {
+                    updateFormState(e.component, args.dashboardItem);
                 },
-                {
-                    dataField: axisMaxValueDataItemProperty.propertyName,
-                    editorType: "dxSelectBox",
-                    label: {
-                        text: "DataItem",
+                items: [
+                    {
+                        dataField: axisMaxValueEnabledProperty.propertyName,
+                        editorType: "dxCheckBox",
+                        label: { visible: false },
+                        editorOptions: {
+                            text: "Enabled",
+                        }
                     },
-                    editorOptions: {
-                        displayExpr: "text",
-                        valueExpr: "value",
-                        items: args.dashboardItem.hiddenMeasures().map(measure => ({
-                            text: measure.name() || measure.dataMember(),
-                            value: measure.uniqueName()
-                        })),
+                    {
+                        dataField: axisMaxValueIsBoundProperty.propertyName,
+                        label: {
+                            text: "Mode"
+                        },
+                        template: Designer.FormItemTemplates.buttonGroup,
+                        editorOptions: {
+                            keyExpr: "value",
+                            items: [{
+                                value: true,
+                                text: "Bound"
+                            }, {
+                                value: false,
+                                text: "Value"
+                            }]
+                        }
+                    },
+                    {
+                        dataField: axisMaxValueConstantProperty.propertyName,
+                        editorType: "dxTextBox",
+                        label: {
+                            text: "Value",
+                        }
+                    },
+                    {
+                        dataField: axisMaxValueDataItemProperty.propertyName,
+                        editorType: "dxSelectBox",
+                        label: {
+                            text: "DataItem",
+                        },
+                        editorOptions: {
+                            displayExpr: "text",
+                            valueExpr: "value",
+                            items: args.dashboardItem.hiddenMeasures().map(measure => ({
+                                text: measure.name() || measure.dataMember(),
+                                value: measure.uniqueName()
+                            })),
+                        }
                     }
-                }
-            ]
-        })
+                ]
+            })
+        }
     }
-
+    
     // 4. Event Subscription
     function ChartAxisMaxValueExtension(dashboardControl) {
         this.name = "ChartAxisMaxValueExtension";
