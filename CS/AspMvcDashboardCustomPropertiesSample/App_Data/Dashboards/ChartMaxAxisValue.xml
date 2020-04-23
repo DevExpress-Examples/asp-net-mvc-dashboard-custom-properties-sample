@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dashboard>
-  <Title Text="Chart Line Max Value Extension" />
+  <Title Text="Chart Line Max Value Property" />
   <DataSources>
     <SqlDataSource Name="SalesPerson" ComponentName="DataSource1">
       <Connection Name="NWindConnectionString" FromAppConfig="true" />
