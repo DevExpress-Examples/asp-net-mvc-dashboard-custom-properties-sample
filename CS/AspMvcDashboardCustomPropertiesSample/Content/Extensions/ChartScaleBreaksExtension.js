@@ -24,21 +24,23 @@
 
     // 3. Designer
     function onCustomizeSections(args) {
-        args.addSection({
-            title: "Scale breaks (Custom)",
-            items: [
-                {
-                    dataField: autoScaleBreaksProperty.propertyName,
-                    editorType: "dxCheckBox",
-                    label: {
-                        visible: false
-                    },
-                    editorOptions: {
-                        text: "Enable Auto Scale breaks"
+        if (args.dashboardItem instanceof Model.ChartItem) {
+            args.addSection({
+                title: "Scale breaks (Custom)",
+                items: [
+                    {
+                        dataField: autoScaleBreaksProperty.propertyName,
+                        editorType: "dxCheckBox",
+                        label: {
+                            visible: false
+                        },
+                        editorOptions: {
+                            text: "Enable Auto Scale breaks"
+                        }
                     }
-                }
-            ]
-        });
+                ]
+            });
+        }
     };
     // 4. Event Subscription
     function ChartScaleBreaksExtension(dashboardControl) {
