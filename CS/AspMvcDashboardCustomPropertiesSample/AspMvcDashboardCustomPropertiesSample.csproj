@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -144,7 +144,7 @@
     <Content Include="App_Data\Dashboards\ChartConstantLines.xml" />
     <Content Include="App_Data\Dashboards\ChartLineOptions.xml" />
     <Content Include="App_Data\Dashboards\ChartMaxAxisValue.xml" />
-    <Content Include="App_Data\Dashboards\DashboardItemDescription.xml" />
+    <Content Include="App_Data\Dashboards\DashboardDescription.xml" />
     <Content Include="App_Data\Dashboards\ItemDescription.xml" />
     <Content Include="App_Data\Dashboards\ChartScaleBreaks.xml" />
     <Content Include="Content\Extensions\ChartAxisMaxValueExtension.js" />
