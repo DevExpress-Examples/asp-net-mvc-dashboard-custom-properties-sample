@@ -102,5 +102,7 @@ Overview:
 
 ## See Also
 
-- [Client-Side Customization](https://docs.devexpress.com/Dashboard/401701/designer-and-viewer-applications/web-dashboard/client-side-customization?v=20.1)
-- [Custom properties](https://docs.devexpress.com/Dashboard/401702/designer-and-viewer-applications/web-dashboard/client-side-customization/custom-properties?v=20.1)
+- [Documentation: Client-Side Customization](https://docs.devexpress.com/Dashboard/401701/designer-and-viewer-applications/web-dashboard/client-side-customization?v=20.1)
+- [Documentation: Custom properties](https://docs.devexpress.com/Dashboard/401702/designer-and-viewer-applications/web-dashboard/client-side-customization/custom-properties?v=20.1)
+- [Example: Custom Properties for WinForms Dashboard Designer](https://github.com/DevExpress-Examples/winforms-dashboard-custom-properties)
+- [Example: Custom Properties for WPF Dashboard Viewer](https://github.com/DevExpress-Examples/wpf-dashboard-custom-properties)
