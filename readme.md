@@ -100,9 +100,13 @@ Overview:
 - Demonstrates how to bind a custom property to a list of data items.
 - Customizes export to display the result in the exported document.
 
-## See Also
+## Documentation
 
-- [Documentation: Client-Side Customization](https://docs.devexpress.com/Dashboard/401701/designer-and-viewer-applications/web-dashboard/client-side-customization?v=20.1)
-- [Documentation: Custom properties](https://docs.devexpress.com/Dashboard/401702/designer-and-viewer-applications/web-dashboard/client-side-customization/custom-properties?v=20.1)
-- [Example: Custom Properties for WinForms Dashboard Designer](https://github.com/DevExpress-Examples/winforms-dashboard-custom-properties)
-- [Example: Custom Properties for WPF Dashboard Viewer](https://github.com/DevExpress-Examples/wpf-dashboard-custom-properties)
+- [Client-Side Customization](https://docs.devexpress.com/Dashboard/401701/designer-and-viewer-applications/web-dashboard/client-side-customization?v=20.1)
+- [Custom properties](https://docs.devexpress.com/Dashboard/401702/designer-and-viewer-applications/web-dashboard/client-side-customization/custom-properties?v=20.1)
+
+## More Examples
+
+- [WinForms Dashboard Designer - Custom Properties](https://github.com/DevExpress-Examples/winforms-dashboard-custom-properties)
+- [WPF Dashboard Viewer - Custom Properties](https://github.com/DevExpress-Examples/wpf-dashboard-custom-properties)
+- [Multiplatform Example - Constant Lines](https://github.com/DevExpress-Examples/dashboard-constant-lines)
