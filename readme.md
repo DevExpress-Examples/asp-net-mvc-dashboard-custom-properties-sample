@@ -150,7 +150,7 @@ Overview:
 ## Documentation
 
 - [Client-Side Customization](https://docs.devexpress.com/Dashboard/401701)
-- [Custom properties](https://docs.devexpress.com/Dashboard/401702)
+- [Custom Properties](https://docs.devexpress.com/Dashboard/401702)
 
 ## More Examples
 
