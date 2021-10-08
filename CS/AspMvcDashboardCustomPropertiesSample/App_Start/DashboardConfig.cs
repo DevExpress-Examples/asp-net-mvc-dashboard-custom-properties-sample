@@ -14,8 +14,8 @@ namespace AspMvcDashboardCustomPropertiesSample {
 
         public static string  DashboardFolder {get { return HostingEnvironment.MapPath("~/App_Data/Dashboards");  } }
         public static void RegisterService(RouteCollection routes) {
-            routes.MapDashboardRoute("dashboardControl");
-            
+            routes.MapDashboardRoute("dashboardControl", "DefaultDashboard");
+
             // DashboardFileStorage dashboardFileStorage = new DashboardFileStorage(DashboardFolder);
             // DashboardConfigurator.Default.SetDashboardStorage(dashboardFileStorage);
 

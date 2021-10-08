@@ -21,11 +21,12 @@
     }
 </script>
 @Html.DevExpress().Dashboard(settings => {
-    settings.Name = "Dashboard";
-    settings.Width = Unit.Percentage(100);
-    settings.Height = Unit.Percentage(100);
-    settings.UseNeutralFilterMode = true;
-    settings.ClientSideEvents.BeforeRender = "onBeforeRender";
-    settings.IncludeDashboardIdToUrl = true;
-    settings.IncludeDashboardStateToUrl = true;
+	settings.Name = "Dashboard";
+	settings.ControllerName = "DefaultDashboard";
+	settings.Width = Unit.Percentage(100);
+	settings.Height = Unit.Percentage(100);
+	settings.UseNeutralFilterMode = true;
+	settings.ClientSideEvents.BeforeRender = "onBeforeRender";
+	settings.IncludeDashboardIdToUrl = true;
+	settings.IncludeDashboardStateToUrl = true;
 }).GetHtml()
