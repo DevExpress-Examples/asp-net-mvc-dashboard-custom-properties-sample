@@ -40,35 +40,41 @@ To apply custom property values to a dashboard, you need to create an extension.
 
 To register an extension, attach the extension script before the control is rendered and call the `registerExtension` method:
 
-```aspx
+```razor
+<script type="text/javascript">
+    function onBeforeRender(sender) {
+        var control = sender.GetDashboardControl();
+        control.registerExtension(new DevExpress.Dashboard.DashboardPanelExtension(control));
+
+        control.registerExtension(new ChartScaleBreaksExtension(control));
+        control.registerExtension(new ChartLineOptionsExtension(control));
+        control.registerExtension(new ChartAxisMaxValueExtension(control));
+        control.registerExtension(new ChartConstantLinesExtension(control));
+        control.registerExtension(new ItemDescriptionExtension(control));
+        control.registerExtension(new DashboardDescriptionExtension(control));
+        control.registerExtension(new GridHeaderFilterExtension(control));
+    }
+</script>
+
+@Html.DevExpress().Dashboard(settings => {
+    settings.Name = "Dashboard";
+    settings.ControllerName = "DefaultDashboard";
+    settings.Width = Unit.Percentage(100);
+    settings.Height = Unit.Percentage(100);
+    settings.WorkingMode = DevExpress.DashboardWeb.WorkingMode.Viewer;
+    settings.UseNeutralFilterMode = true;
+    settings.ClientSideEvents.BeforeRender = "onBeforeRender";
+    settings.IncludeDashboardIdToUrl = true;
+    settings.IncludeDashboardStateToUrl = true;
+}).GetHtml()
+
 <script src="~/Content/Extensions/ChartAxisMaxValueExtension.js"></script>
 <script src="~/Content/Extensions/ChartConstantLinesExtension.js"></script>
 <script src="~/Content/Extensions/ChartLineOptionsExtension.js"></script>
 <script src="~/Content/Extensions/ChartScaleBreaksExtension.js"></script>
 <script src="~/Content/Extensions/ItemDescriptionExtension.js"></script>
 <script src="~/Content/Extensions/DashboardDescriptionExtension.js"></script>
-
-<script type="text/javascript">
-    function onBeforeRender(sender) {
-        var control = sender.GetDashboardControl()
-        control.registerExtension(new DevExpress.Dashboard.DashboardPanelExtension(control))
-        control.registerExtension(new ChartScaleBreaksExtension(control))
-        control.registerExtension(new ChartLineOptionsExtension(control))
-        control.registerExtension(new ChartAxisMaxValueExtension(control))
-        control.registerExtension(new ChartConstantLinesExtension(control))
-        control.registerExtension(new ItemDescriptionExtension(control))
-        control.registerExtension(new DashboardDescriptionExtension(control))
-    }
-</script>
-@Html.DevExpress().Dashboard(settings => {
-    settings.Name = "Dashboard";
-    settings.Width = Unit.Percentage(100);
-    settings.Height = Unit.Percentage(100);
-    settings.UseNeutralFilterMode = true;
-    settings.ClientSideEvents.BeforeRender = "onBeforeRender";
-    settings.IncludeDashboardIdToUrl = true;
-    settings.IncludeDashboardStateToUrl = true;
-}).GetHtml()
+<script src="~/Content/Extensions/GridHeaderFilterExtension.js"></script>
 ```
 
 ## Example structure
@@ -151,6 +157,18 @@ Overview:
 - Shows how to work with complex custom values that are saved as an array.
 - Demonstrates how to bind a custom property to a list of data items.
 - Customizes export to display the result in the exported document.
+
+### GridHeaderFilterExtension
+
+[View Extension](./CS/AspMvcDashboardCustomPropertiesSample/Content/Extensions/GridHeaderFilterExtension.js)
+
+This extension adds Header Filter buttons to the Grid dashboard item.
+
+![](images/GridHeaderFilterExtension.png)
+
+Overview:
+- Adds a custom property for a specific dashboard item (Grid).
+- Integrates a _Header Filter (Custom)_ section, which contains the [ButtonGroup](https://js.devexpress.com/DevExtreme/ApiReference/UI_Components/dxButtonGroup/) widget as an editor, into the _Options_ menu.
 
 ## Documentation
 

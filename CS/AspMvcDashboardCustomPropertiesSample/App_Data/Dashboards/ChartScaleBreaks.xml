@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dashboard>
-  <Title Text="Chart - Scale Breaks" />
+  <Title Text="Chart Scale Breaks Custom Property" />
   <DataSources>
     <SqlDataSource Name="SalesPerson" ComponentName="DataSource1">
       <Connection Name="NWindConnectionString" FromAppConfig="true" />

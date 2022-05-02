@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dashboard>
-  <Title Text="Chart - Custom Line Options" />
+  <Title Text="Chart Line Options Custom Property" />
   <DataSources>
     <SqlDataSource Name="SalesPerson" ComponentName="DataSource1">
       <Connection Name="NWindConnectionString" FromAppConfig="true" />
@@ -21,10 +21,10 @@
         <ScaleBreaks>false</ScaleBreaks>
       </CustomProperties>
       <DataItems>
-        <Measure DataMember="Extended Price" FilterString="[DataItem2] = 2015" DefaultId="DataItem0" />
+        <Measure DataMember="Extended Price" FilterString="[DataItem2] = 1997" DefaultId="DataItem0" />
         <Dimension DataMember="OrderDate" DateTimeGroupInterval="Month" DefaultId="DataItem1" />
         <Dimension DataMember="OrderDate" DefaultId="DataItem2" />
-        <Measure DataMember="Extended Price" FilterString="[DataItem2] = 2014" DefaultId="DataItem3" />
+        <Measure DataMember="Extended Price" FilterString="[DataItem2] = 1996" DefaultId="DataItem3" />
       </DataItems>
       <HiddenDimensions>
         <Dimension DefaultId="DataItem2" />
@@ -35,13 +35,13 @@
       <Panes>
         <Pane Name="Pane 1">
           <Series>
-            <Simple Name="Extended Price (2015)" SeriesType="Line">
+            <Simple Name="Extended Price (1997)" SeriesType="Line">
               <Value DefaultId="DataItem0" />
               <CustomProperties>
                 <DashStyleProperty>dashdot</DashStyleProperty>
               </CustomProperties>
             </Simple>
-            <Simple Name="Extended Price (2014)" SeriesType="Line">
+            <Simple Name="Extended Price (1996)" SeriesType="Line">
               <Value DefaultId="DataItem3" />
               <CustomProperties>
                 <DashStyleProperty>longDash</DashStyleProperty>
@@ -56,10 +56,10 @@
         <ScaleBreaks>false</ScaleBreaks>
       </CustomProperties>
       <DataItems>
-        <Measure DataMember="Extended Price" FilterString="[DataItem2] = 2015" DefaultId="DataItem0" />
+        <Measure DataMember="Extended Price" FilterString="[DataItem2] = 1997" DefaultId="DataItem0" />
         <Dimension DataMember="OrderDate" DateTimeGroupInterval="Month" DefaultId="DataItem1" />
         <Dimension DataMember="OrderDate" DefaultId="DataItem2" />
-        <Measure DataMember="Extended Price" FilterString="[DataItem2] = 2014" DefaultId="DataItem3" />
+        <Measure DataMember="Extended Price" FilterString="[DataItem2] = 1996" DefaultId="DataItem3" />
       </DataItems>
       <HiddenDimensions>
         <Dimension DefaultId="DataItem2" />
@@ -70,10 +70,10 @@
       <Panes>
         <Pane Name="Pane 1">
           <Series>
-            <Simple Name="Extended Price (2015)" SeriesType="Line">
+            <Simple Name="Extended Price (1997)" SeriesType="Line">
               <Value DefaultId="DataItem0" />
             </Simple>
-            <Simple Name="Extended Price (2014)" SeriesType="Line">
+            <Simple Name="Extended Price (1996)" SeriesType="Line">
               <Value DefaultId="DataItem3" />
             </Simple>
           </Series>
