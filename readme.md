@@ -3,16 +3,18 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T878019)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-*Files to look at*:
-- [Extensions](./CS/AspMvcDashboardCustomPropertiesSample/Content/Extensions)
-- [Index.cshtml](./CS/AspMvcDashboardCustomPropertiesSample/Views/Home/Index.cshtml)
 
 # Dashboard for MVC - Custom Properties
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/253062639/)**
 <!-- run online end -->
 
-The example shows how to create [custom properties](https://docs.devexpress.com/Dashboard/401702/designer-and-viewer-applications/web-dashboard/client-side-customization/custom-properties?v=20.1) for the Web Dashboard.
+The example shows how to create [custom properties](https://docs.devexpress.com/Dashboard/401702/designer-and-viewer-applications/web-dashboard/client-side-customization/custom-properties) for the Web Dashboard.
+
+## Files to Look At
+
+- [Extensions](./CS/AspMvcDashboardCustomPropertiesSample/Content/Extensions)
+- [Index.cshtml](./CS/AspMvcDashboardCustomPropertiesSample/Views/Home/Index.cshtml)
 
 ## Overview
 
