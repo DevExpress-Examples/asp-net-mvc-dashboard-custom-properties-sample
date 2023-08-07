@@ -11,7 +11,7 @@
 
 The example shows how to create [custom properties](https://docs.devexpress.com/Dashboard/401702/designer-and-viewer-applications/web-dashboard/client-side-customization/custom-properties) for the Web Dashboard.
 
-## Files to Look At
+## Files to Review
 
 - [Extensions](./CS/AspMvcDashboardCustomPropertiesSample/Content/Extensions)
 - [Index.cshtml](./CS/AspMvcDashboardCustomPropertiesSample/Views/Home/Index.cshtml)
