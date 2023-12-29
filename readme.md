@@ -8,9 +8,6 @@
 - [Index.cshtml](./CS/AspMvcDashboardCustomPropertiesSample/Views/Home/Index.cshtml)
 
 # Dashboard for MVC - Custom Properties
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/253062639/)**
-<!-- run online end -->
 
 The example shows how to create [custom properties](https://docs.devexpress.com/Dashboard/401702/designer-and-viewer-applications/web-dashboard/client-side-customization/custom-properties?v=20.1) for the Web Dashboard.
 
